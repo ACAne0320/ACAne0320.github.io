@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ACAne0320&#39;s blog</title>
+    <title>hugo-PaperMod</title>
     <link>https://ACAne0320.github.io/</link>
-    <description>Recent content on ACAne0320&#39;s blog</description>
+    <description>Recent content on hugo-PaperMod</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 28 Oct 2023 22:04:37 +0800</lastBuildDate><atom:link href="https://ACAne0320.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Oct 2023 11:37:21 +0800</lastBuildDate><atom:link href="https://ACAne0320.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://ACAne0320.github.io/post/test/</link>
+      <pubDate>Sun, 29 Oct 2023 11:37:21 +0800</pubDate>
+      
+      <guid>https://ACAne0320.github.io/post/test/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>New Beginning!</title>
       <link>https://ACAne0320.github.io/post/new_begining/</link>
@@ -31,10 +40,10 @@ Keep calm and carry on!
     
     <item>
       <title>BentoML使用流程</title>
-      <link>https://ACAne0320.github.io/post/bentoml/</link>
+      <link>https://ACAne0320.github.io/post/bentoml_quickstart/</link>
       <pubDate>Thu, 26 Oct 2023 17:20:02 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/bentoml/</guid>
+      <guid>https://ACAne0320.github.io/post/bentoml_quickstart/</guid>
       <description>BentoML 基本流程：
 train.py训练模型 使用bentoml保存模型 构建service.py，创建相应的服务 创建bentofile.yaml文件 使用命令行bentoml build 构建Bento 将构建好的Bento推送到Yatai上部署 / 在本地使用命令启动服务 发送预测请求 一、使用BentoML保存模型 如果想要开始使用BentoML服务，首先需要将训练的模型使用BentoML的API在本地进行保存。
 bentoml.(framename).save_model(modelname, model)
@@ -49,6 +58,17 @@ bentoml.tensorflow.save_model(mnist_clf, mnist_model)
 e.g. 基于sklearn实现的iris数据集模型：
 import bentoml from sklearn import svm from sklearn import datasets # Load training data set iris = datasets.load_iris() X, y = iris.data, iris.target # Train the model clf = svm.SVC(gamma=&amp;#39;scale&amp;#39;) clf.fit(X, y) # Save model to the BentoML local model store saved_model = bentoml.</description>
     </item>
+    
+    <item>
+      <title>A regular player, listener, developer.</title>
+      <link>https://ACAne0320.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ACAne0320.github.io/about/</guid>
+      <description>永远是深夜有多好。</description>
+    </item>
+    
+    
     
   </channel>
 </rss>
