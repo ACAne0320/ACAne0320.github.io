@@ -6,14 +6,48 @@
     <description>Recent content in Posts on hugo-PaperMod</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Oct 2023 11:37:21 +0800</lastBuildDate><atom:link href="https://ACAne0320.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 18:58:25 +0800</lastBuildDate><atom:link href="https://ACAne0320.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://ACAne0320.github.io/post/test/</link>
-      <pubDate>Sun, 29 Oct 2023 11:37:21 +0800</pubDate>
+      <title>Do it for youself</title>
+      <link>https://ACAne0320.github.io/post/2024_review/</link>
+      <pubDate>Sat, 28 Sep 2024 18:58:25 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/test/</guid>
-      <description></description>
+      <guid>https://ACAne0320.github.io/post/2024_review/</guid>
+      <description>前言 不知不觉2024年也过去了一大半了，公司的各种变动让我丧失了对工作的热情，学不到新的技术，没有新的需求，要做的仅仅是运营简单的机器学习项目，我时常思考这样的工作能为我带来什么？我的领导对我很好，我也很感谢他对我的培养，但是……
+鼓起勇气 在听闻需要调整薪资时，我脑袋里一片空白，之前想着公司在我最困难的时候愿意让我进去学习，而我能为公司做些什么呢？能陪伴他多久呢？现在看来，对于我本就不高的工资，在压力巨大的今天，抛去房租等日常开销，都不能随心所欲的想吃什么就吃什么了。 承诺的一年调薪两次也并没有做到，甚至还要降薪。好像是我不能接受的，我思来想去。
+在收到薪资调整意向的一个月之后，我才下定决心找下一份工作。
+看不到技术进步的工作、一趟一个半小时的通勤、需要调整的薪资，是压死骆驼的最后一根稻草。
+努力……会有回报吗？ 我不知道。
+下班的路上，同事和我说：
+“我们是在这里干了这么久了，也不太好找下家。你不一样，趁着你还年轻，去拼一下吧。”
+是啊，还年轻，是时候拼一下了。
+第一次面试网易外包给我的打击太大了，我发现我好像什么都不会。于是这一个月以来，七点起床，一两点才睡觉，每天都很疲惫，下班后修改简历、背八股文、看书了解Python高级用法(Fluent Python)、了解k8s/Docker等等……
+几乎没有其他额外开销的我，居然也攒不下什么钱，勉强够下一个月的房租。 我甚至怀疑是不是我的水平只够一份月薪7500的工作？噢不……甚至还要降。
+在面试了几家之后，我觉得我的水平对应的薪资远不止如此，我觉得我可以有更大的天地……如果我面试不紧张能把脑子里的知识都好好表达出来的话。
+勇敢迈向未来 我开始疯狂投简历找面试的机会，我想给我自己/给我爱的人更好的生活，累点苦点也无所谓。
+我从未想过在工作了这么久之后，还是在天天吃泡面，不敢多花钱，更别说攒下一笔钱了。
+既然选择了，就努力的去实现它，无论结果如何。
+过程永远都会让你切实地感觉到你自己的进步。
+Truth the Process.
+结语 希望在你迷茫的时候，找到一个目标，无论目标有多难，首先得先去做。在执行的过程中，一步一步接近自己的目标，回头来看，你会感谢那个勇于尝试的自己。</description>
+    </item>
+    
+    <item>
+      <title>LLaMA-Factory Quickstart</title>
+      <link>https://ACAne0320.github.io/post/llamafactory_quickstart/</link>
+      <pubDate>Mon, 01 Apr 2024 17:43:46 +0800</pubDate>
+      
+      <guid>https://ACAne0320.github.io/post/llamafactory_quickstart/</guid>
+      <description>项目github地址：https://github.com/hiyouga/LLaMA-Factory?tab=readme-ov-file
+项目hugging face地址：
+一、环境构建 1、基础虚拟环境构建 git clone https://github.com/hiyouga/LLaMA-Factory.git conda create -n llama_factory python=3.10 conda activate llama_factory cd LLaMA-Factory pip install -r requirements.txt 如果要在 Windows 平台上开启量化 LoRA（QLoRA），需要安装预编译的 bitsandbytes 库, 支持 CUDA 11.1 到 12.2, 请根据您的 CUDA 版本情况选择适合的发布版本。
+pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.2.post2-py3-none-win_amd64.whl 2、在虚拟环境中安装cuda、cudnn 在新建的虚拟环境中使用conda安装cuda和cudnn。
+conda install cudatoolkit cudnn 安装完成后，进入python环境进行验证，检测pytorch中CUDA是否能正常使用。
+import torch torch.cuda.is_available() 如果返回True，则cuda安装正常。
+如果返回False，请检查cuda和pytorch版本是否符合。
+使用步骤1中的requirements.txt安装时，可能安装的是cpu版本的pytorch，使用conda list命令查看安装的pytorch包，如果是cpu版，则需要重新安装对应cuda版本的gpu版pytorch。
+进入虚拟环境中执行以下命令，安装gpu版本的pytorch，下述演示的命令安装的为适配cuda11.8版本的pytorch，请按需选择版本。
+pip3 install numpy --pre torch --force-reinstall --index-url https://download.pytorch.org/whl/nightly/cu118 二、启动LLaMA Board GUI 1、设置环境变量 CUDA_VISIBLE_DEVICES=0 python src/train_web.py 在Windows系统下，请设置系统环境变量CUDA_VISIBLE_DEVICES的值为0。</description>
     </item>
     
     <item>
