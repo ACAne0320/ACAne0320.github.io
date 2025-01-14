@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on hugo-PaperMod</title>
-    <link>https://ACAne0320.github.io/post/</link>
-    <description>Recent content in Posts on hugo-PaperMod</description>
+    <title>Posts on ACAne0320&#39;s blog</title>
+    <link>https://blog.nyaashino.com/post/</link>
+    <description>Recent content in Posts on ACAne0320&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Sep 2024 18:58:25 +0800</lastBuildDate><atom:link href="https://ACAne0320.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jan 2025 00:28:25 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>饥荒服务器配置</title>
+      <link>https://blog.nyaashino.com/post/dst_server_configuration/</link>
+      <pubDate>Wed, 15 Jan 2025 00:28:25 +0800</pubDate>
+      
+      <guid>https://blog.nyaashino.com/post/dst_server_configuration/</guid>
+      <description>饥荒服务器配置 服务器配置 腾讯云轻量级服务器
+2C4G
+系统盘 - SSD云硬盘 70GB
+600GB/月（带宽：6Mbps）
+镜像：Ubuntu22.04-Docker26
+一、下载SteamCMD 1、创建新用户 创建一个名为 steam 的用户帐户以安全地运行 SteamCMD，并将其与操作系统的其余部分隔离。以 root 用户身份登录时请勿运行 steamcmd——这样做会带来安全风险。
+1.以 root 用户身份创建 steam 用户： useradd -m steam or sudo useradd -m steam 2.设置密码 sudo passwd steam 3.切换到steam用户 su - steam 看到 $ 提示符就算切换成功
+ubuntu@VM-8-7-ubuntu:~$ su - steam Password: $ $ 你可以通过运行以下命令确认当前用户：
+whoami 输出应为：
+steam 你也可以通过以下命令确认当前目录：
+pwd 输出应为：
+/home/steam 4.使用管理员账户为 steam 用户赋予 sudo 权限 1.切换回管理员账户（如 ubuntu 用户）：
+exit 2.确认当前用户有 sudo 权限： 输入以下命令检查：</description>
+    </item>
+    
     <item>
       <title>Do it for youself</title>
-      <link>https://ACAne0320.github.io/post/2024_review/</link>
+      <link>https://blog.nyaashino.com/post/2024_review/</link>
       <pubDate>Sat, 28 Sep 2024 18:58:25 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/2024_review/</guid>
+      <guid>https://blog.nyaashino.com/post/2024_review/</guid>
       <description>前言 不知不觉2024年也过去了一大半了，公司的各种变动让我丧失了对工作的热情，学不到新的技术，没有新的需求，要做的仅仅是运营简单的机器学习项目，我时常思考这样的工作能为我带来什么？我的领导对我很好，我也很感谢他对我的培养，但是……
 鼓起勇气 在听闻需要调整薪资时，我脑袋里一片空白，之前想着公司在我最困难的时候愿意让我进去学习，而我能为公司做些什么呢？能陪伴他多久呢？现在看来，对于我本就不高的工资，在压力巨大的今天，抛去房租等日常开销，都不能随心所欲的想吃什么就吃什么了。 承诺的一年调薪两次也并没有做到，甚至还要降薪。好像是我不能接受的，我思来想去。
 在收到薪资调整意向的一个月之后，我才下定决心找下一份工作。
@@ -34,10 +55,10 @@ Truth the Process.
     
     <item>
       <title>LLaMA-Factory Quickstart</title>
-      <link>https://ACAne0320.github.io/post/llamafactory_quickstart/</link>
+      <link>https://blog.nyaashino.com/post/llamafactory_quickstart/</link>
       <pubDate>Mon, 01 Apr 2024 17:43:46 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/llamafactory_quickstart/</guid>
+      <guid>https://blog.nyaashino.com/post/llamafactory_quickstart/</guid>
       <description>项目github地址：https://github.com/hiyouga/LLaMA-Factory?tab=readme-ov-file
 项目hugging face地址：
 一、环境构建 1、基础虚拟环境构建 git clone https://github.com/hiyouga/LLaMA-Factory.git conda create -n llama_factory python=3.10 conda activate llama_factory cd LLaMA-Factory pip install -r requirements.txt 如果要在 Windows 平台上开启量化 LoRA（QLoRA），需要安装预编译的 bitsandbytes 库, 支持 CUDA 11.1 到 12.2, 请根据您的 CUDA 版本情况选择适合的发布版本。
@@ -52,10 +73,10 @@ pip3 install numpy --pre torch --force-reinstall --index-url https://download.py
     
     <item>
       <title>New Beginning!</title>
-      <link>https://ACAne0320.github.io/post/new_begining/</link>
+      <link>https://blog.nyaashino.com/post/new_begining/</link>
       <pubDate>Sat, 28 Oct 2023 22:04:37 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/new_begining/</guid>
+      <guid>https://blog.nyaashino.com/post/new_begining/</guid>
       <description>既然都建好自己的博客了，总得记录些什么吧o.0，于是乎……
 今天是一个值得纪念的日子，为什么捏？请看~
 一、工作 从入职到今天正好四个月，也顺利度过了试用期，工资也勉强够生活（虽然除去必要的开销之后所剩无几了，而且还需要还前几个月一点收入的没有的时候的债，在此特别感谢愿意借我钱的好哥们，虽然你们不一定能读到这篇文章，虽然我还钱还的很慢，但是我会努力的QAQ）。工作氛围也好，压力也没那么大，很幸运遇到这样的公司。
@@ -74,10 +95,10 @@ Keep calm and carry on!
     
     <item>
       <title>BentoML使用流程</title>
-      <link>https://ACAne0320.github.io/post/bentoml_quickstart/</link>
+      <link>https://blog.nyaashino.com/post/bentoml_quickstart/</link>
       <pubDate>Thu, 26 Oct 2023 17:20:02 +0800</pubDate>
       
-      <guid>https://ACAne0320.github.io/post/bentoml_quickstart/</guid>
+      <guid>https://blog.nyaashino.com/post/bentoml_quickstart/</guid>
       <description>BentoML 基本流程：
 train.py训练模型 使用bentoml保存模型 构建service.py，创建相应的服务 创建bentofile.yaml文件 使用命令行bentoml build 构建Bento 将构建好的Bento推送到Yatai上部署 / 在本地使用命令启动服务 发送预测请求 一、使用BentoML保存模型 如果想要开始使用BentoML服务，首先需要将训练的模型使用BentoML的API在本地进行保存。
 bentoml.(framename).save_model(modelname, model)

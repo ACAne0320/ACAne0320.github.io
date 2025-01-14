@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://ACAne0320.github.io/sitemap.xml
+Sitemap: https://blog.nyaashino.com/sitemap.xml
