@@ -8,15 +8,16 @@
     <language>en</language>
     <lastBuildDate>Wed, 15 Jan 2025 00:28:25 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>饥荒服务器配置</title>
+      <title>饥荒服务器配置（腾讯云）</title>
       <link>https://blog.nyaashino.com/post/dst_server_configuration/</link>
       <pubDate>Wed, 15 Jan 2025 00:28:25 +0800</pubDate>
       
       <guid>https://blog.nyaashino.com/post/dst_server_configuration/</guid>
-      <description>饥荒服务器配置 服务器配置 腾讯云轻量级服务器
-2C4G
-系统盘 - SSD云硬盘 70GB
-600GB/月（带宽：6Mbps）
+      <description>饥荒服务器配置 机器配置 主机配置 系统版本：Windows 11 23H2
+服务器 腾讯云轻量级服务器
+配置：2C4G
+存储：SSD云硬盘 70GB
+流量：600GB/月（带宽：6Mbps）
 镜像：Ubuntu22.04-Docker26
 一、下载SteamCMD 1、创建新用户 创建一个名为 steam 的用户帐户以安全地运行 SteamCMD，并将其与操作系统的其余部分隔离。以 root 用户身份登录时请勿运行 steamcmd——这样做会带来安全风险。
 1.以 root 用户身份创建 steam 用户： useradd -m steam or sudo useradd -m steam 2.设置密码 sudo passwd steam 3.切换到steam用户 su - steam 看到 $ 提示符就算切换成功
@@ -25,7 +26,7 @@ whoami 输出应为：
 steam 你也可以通过以下命令确认当前目录：
 pwd 输出应为：
 /home/steam 4.使用管理员账户为 steam 用户赋予 sudo 权限 1.切换回管理员账户（如 ubuntu 用户）：
-exit 2.确认当前用户有 sudo 权限： 输入以下命令检查：</description>
+exit 2.</description>
     </item>
     
     <item>
