@@ -6,7 +6,23 @@
     <description>Recent content on ACAne0320&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jan 2025 00:28:25 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Feb 2025 20:20:46 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ncmp 使用指北</title>
+      <link>https://blog.nyaashino.com/post/ncmp_quickstart/</link>
+      <pubDate>Thu, 13 Feb 2025 20:20:46 +0800</pubDate>
+      
+      <guid>https://blog.nyaashino.com/post/ncmp_quickstart/</guid>
+      <description>本文档旨在给对于从来没有接触过GitHub Actions以及Cookies相关的网络知识的萌新提供简单易懂的网易云合伙人脚本基于GitHub Actions部署的操作方式。
+准备工作 Github账号，点此注册并登录 有音乐合伙人权益的网易云音乐账号，点此登录 实操步骤 1. Fork ncmp 仓库 项目地址：https://github.com/ACAne0320/ncmp 进入ncmp仓库点击Fork(前提已登录) 创建仓库
+仓库名称，可以随便填写 点击创建 2. 获取脚本所需相关参数 网易云Cookies获取 首先登录网易云音乐网页版，登录后按F12（或者鼠标右键）打开开发者模式 切换到网络页面 此时随便点击一下网页，发起请求（比如点击我的音乐） 在Network页面按照步骤操作
+打开搜索框 在搜索框中搜索_csrf或者MUSIC_U 找到需要的两个参数_csrf和MUSIC_U，复制下来，后面会用到 邮箱通知设置（以QQ邮箱为例） 进入QQ邮箱-&amp;gt;设置-&amp;gt;账号-&amp;gt;打开POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务 记住该授权码，后续会用到
+此授权码仅用于自己给自己发送Cookie过期提示短信，请勿暴露
+3. 设置GitHub Actions Secret 在项目仓库的Settings-&amp;gt;Security-&amp;gt;Secrets and variables中设置Secret 然后将步骤2中获取的参数一一填写进去。
+Name Secret MUSIC_U 网易云音乐 MUSIC_U CSRF 网易云音乐 csrf NOTIFY_EMAIL 你的邮箱地址（此例中为 xxxx@qq.com） EMAIL_PASSWORD 邮箱授权码（在上面步骤中获取的授权码） SMTP_SERVER smtp.qq.com（如果是qq，直接使用这个） SMTP_PORT 465（同上） 创建CSRF 创建MUSIC_U 其他参数同理填写。
+4. 手动运行脚本 点击进入Actions页面 点击I understand my workflows, go ahead and enable them 进入Auto Score，点击Enable workflow启用工作流 手动运行测试一次 可以点击进去查看详细日志 如果在前面的步骤中，设置了邮件相关参数的话，当Cookie过期时，会发送邮件提醒。此时再去Sercet中更新网易云音乐的两个Cookie 即可。</description>
+    </item>
+    
     <item>
       <title>饥荒服务器配置（腾讯云）</title>
       <link>https://blog.nyaashino.com/post/dst_server_configuration/</link>
