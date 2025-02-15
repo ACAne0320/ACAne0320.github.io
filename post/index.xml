@@ -6,7 +6,29 @@
     <description>Recent content in Posts on ACAne0320&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Feb 2025 20:20:46 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 11:28:25 +0800</lastBuildDate><atom:link href="https://blog.nyaashino.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>饥荒服务器配置（腾讯云）</title>
+      <link>https://blog.nyaashino.com/post/dst_server_configuration/</link>
+      <pubDate>Sat, 15 Feb 2025 11:28:25 +0800</pubDate>
+      
+      <guid>https://blog.nyaashino.com/post/dst_server_configuration/</guid>
+      <description>饥荒服务器配置（2025/02/15更新） 基于腾讯云轻量的饥荒服务器配置
+解决启动服务器时下载Mod提示DownloadServerMods timed out with no response from Workshop...的错误。
+机器配置 主机配置 系统版本：Windows 11 23H2
+服务器 腾讯云轻量级服务器
+配置：2C4G
+存储：SSD云硬盘 70GB
+流量：600GB/月（带宽：6Mbps）
+镜像：Ubuntu22.04-Docker26
+推荐使用Termora进行SSH连接。
+Termora is a terminal emulator and SSH client for Windows, macOS and Linux.
+一、下载 steamcmd 1、安装相关依赖 安装steamcmd和饥荒服务器需要用到的依赖
+sudo add-apt-repository multiverse sudo dpkg --add-architecture i386 sudo apt update sudo apt install libstdc++6 libgcc1 libcurl4-gnutls-dev:i386 lib32z1 2、安装 steamcmd 在根目录下创建 Steam 文件夹
+mkdir ~/Steam &amp;amp;&amp;amp; cd ~/Steam 下载 steamcmd
+wget https://steamcdn-a.</description>
+    </item>
+    
     <item>
       <title>ncmp 使用指北</title>
       <link>https://blog.nyaashino.com/post/ncmp_quickstart/</link>
@@ -21,28 +43,6 @@
 3. 设置GitHub Actions Secret 在项目仓库的Settings-&amp;gt;Security-&amp;gt;Secrets and variables中设置Secret 然后将步骤2中获取的参数一一填写进去。
 Name Secret MUSIC_U 网易云音乐 MUSIC_U CSRF 网易云音乐 csrf NOTIFY_EMAIL 你的邮箱地址（此例中为 xxxx@qq.com） EMAIL_PASSWORD 邮箱授权码（在上面步骤中获取的授权码） SMTP_SERVER smtp.qq.com（如果是qq，直接使用这个） SMTP_PORT 465（同上） 创建CSRF 创建MUSIC_U 其他参数同理填写。
 4. 手动运行脚本 点击进入Actions页面 点击I understand my workflows, go ahead and enable them 进入Auto Score，点击Enable workflow启用工作流 手动运行测试一次 可以点击进去查看详细日志 如果在前面的步骤中，设置了邮件相关参数的话，当Cookie过期时，会发送邮件提醒。此时再去Sercet中更新网易云音乐的两个Cookie 即可。</description>
-    </item>
-    
-    <item>
-      <title>饥荒服务器配置（腾讯云）</title>
-      <link>https://blog.nyaashino.com/post/dst_server_configuration/</link>
-      <pubDate>Wed, 15 Jan 2025 00:28:25 +0800</pubDate>
-      
-      <guid>https://blog.nyaashino.com/post/dst_server_configuration/</guid>
-      <description>饥荒服务器配置 机器配置 主机配置 系统版本：Windows 11 23H2
-服务器 腾讯云轻量级服务器
-配置：2C4G
-存储：SSD云硬盘 70GB
-流量：600GB/月（带宽：6Mbps）
-镜像：Ubuntu22.04-Docker26
-一、下载SteamCMD 1、创建新用户 创建一个名为 steam 的用户帐户以安全地运行 SteamCMD，并将其与操作系统的其余部分隔离。以 root 用户身份登录时请勿运行 steamcmd——这样做会带来安全风险。
-1.以 root 用户身份创建 steam 用户： useradd -m steam or sudo useradd -m steam 2.设置密码 sudo passwd steam 3.切换到steam用户 su - steam 看到 $ 提示符就算切换成功
-ubuntu@VM-8-7-ubuntu:~$ su - steam Password: $ $ 你可以通过运行以下命令确认当前用户：
-whoami 输出应为：
-steam 你也可以通过以下命令确认当前目录：
-pwd 输出应为：
-/home/steam 4.使用管理员账户为 steam 用户赋予 sudo 权限 1.切换回管理员账户（如 ubuntu 用户）：
-exit 2.</description>
     </item>
     
     <item>
